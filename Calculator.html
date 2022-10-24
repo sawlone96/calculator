@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Calculator</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <!--HOMEWORK Design calculator buttons using flexbox -->
+        <div class="container">
+            <div class="row">
+                <input class="full-grow display" id="display" type="text" value="0" readonly>
+            </div>
+            <div class="row">
+                <input class="threetimes-grow  operation-button" type="button" value="AC" onclick="clearText()">
+                <input class="full-grow operation-button" type="button" value="÷" onclick="operation('divide')">
+            </div>
+            <div class="row">
+                <input class="full-grow number-button" type="button" value="7" onclick="numberDisplay('7')">
+                <input class="full-grow number-button" type="button" value="8" onclick="numberDisplay('8')">
+                <input class="full-grow number-button" type="button" value="9" onclick="numberDisplay('9')">
+                <input class="full-grow operation-button" type="button" value="x" onclick="operation('multiply')">
+            </div>
+            <div class="row">
+                <input class="full-grow number-button" type="button" value="4" onclick="numberDisplay('4')">
+                <input class="full-grow number-button" type="button" value="5" onclick="numberDisplay('5')">
+                <input class="full-grow number-button" type="button" value="6" onclick="numberDisplay('6')">
+                <input class="full-grow operation-button" type="button" value="-" onclick="operation('minus')">
+            </div>
+            <div class="row">    
+                <input class="full-grow number-button" type="button" value="1" onclick="numberDisplay('1')">
+                <input class="full-grow number-button" type="button" value="2" onclick="numberDisplay('2')">
+                <input class="full-grow number-button" type="button" value="3" onclick="numberDisplay('3')">
+                <input class="full-grow operation-button" type="button" value="+" onclick="operation('plus')">
+            </div>
+            <div class="row">
+                <input class="threetimes-grow number-button" type="button" value="0" onclick="numberDisplay('0')">
+                <input class="full-grow operation-button" type="button" value="=" onclick="result()">
+            </div>
+        </div>
+
+        <script src="calculator.js"></script>
+    </body>
+</html>

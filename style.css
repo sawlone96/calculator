@@ -1,0 +1,63 @@
+.container {
+    display: flex;
+    flex-direction: column;
+
+    width: 500px;
+    padding:10px;
+    margin: 10px;
+}
+
+input[type="button"] {
+    border: 1px solid rgb(213, 213, 213);
+    height: 50px;
+    border-radius: 15px;
+    margin-bottom: 10px;
+}
+
+input[type="text"] {
+    border: 1px solid rgb(215, 212, 212);
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.display {
+    text-align: right;
+    height: 50px;
+    font-size: 20px;
+}
+
+.operation-button {
+    background-color: rgb(204, 94, 4);
+    color: white;
+}
+
+.operation-button:hover {
+    background-color: rgb(255, 115, 1);
+}
+
+.number-button {
+    background-color: rgb(169, 168, 168);
+    color: white;
+}
+
+.number-button:hover {
+    background-color: rgb(198, 198, 198);
+}
+
+.row {
+    display: flex;
+}
+
+.full-grow {
+    flex-grow: 1;
+    width: 25%;
+}
+
+.twotimes-grow {
+    flex-grow: 2;
+    width: 50%;
+}
+
+.threetimes-grow {
+    width: 75%;
+}
